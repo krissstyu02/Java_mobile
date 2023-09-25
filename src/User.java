@@ -8,12 +8,20 @@ public class User extends Guest {
         this.position = position;
     }
 
-    public String getSurname() {
+    public String etSurname() {
         return surname;
     }
 
     public String getPosition() {
         return position;
+    }
+
+    public void setSurname(String surname) {
+        this.surname=surname;
+    }
+
+    public void setPosition(String position) {
+        this.position=position;
     }
 
     @Override

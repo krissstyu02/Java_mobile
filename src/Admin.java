@@ -1,6 +1,7 @@
 public class Admin extends Guest {
     private String additionalPassword;
 
+
     public Admin(String login, String password, boolean read, boolean write, boolean edit, boolean delete, String additionalPassword) {
         super(login, password, true, true, true, true);
         this.additionalPassword = additionalPassword;
@@ -15,12 +16,16 @@ public class Admin extends Guest {
         this.additionalPassword = additionalPassword;
     }
 
-    public void setRights(boolean read, boolean write, boolean edit, boolean delete) {
-        super.setRights(read, write, edit, delete);
+    public void setRights(boolean write, boolean edit, boolean delete) {
+        this.read = read;
+        this.write = write;
+        this.edit = edit;
+        this.delete = delete;
     }
 
     @Override
     public String toString() {
         return super.toString() + ", Additional Password: " + additionalPassword;
     }
+
 }

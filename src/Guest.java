@@ -1,10 +1,10 @@
 public class Guest {
     private String login;
     private String password;
-    private boolean read;
-    private boolean write;
-    private boolean edit;
-    private boolean delete;
+    protected boolean read;
+    protected boolean write;
+    protected boolean edit;
+    protected boolean delete;
 
     public Guest(String login, String password, boolean read, boolean write, boolean edit, boolean delete) {
         this.login = login;
@@ -51,10 +51,5 @@ public class Guest {
         Guest other = (Guest) obj;
         return login.equals(other.login);
     }
-    public void setRights(boolean read, boolean write, boolean edit, boolean delete) {
-        this.read = read;
-        this.write = write;
-        this.edit = edit;
-        this.delete = delete;
-    }
+
 }
