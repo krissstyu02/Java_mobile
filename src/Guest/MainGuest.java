@@ -1,6 +1,9 @@
+package Guest;
+
 import java.util.ArrayList;
 import java.util.List;
-public class Main {
+
+public class MainGuest {
     public static void main(String[] args) {
         Guest admin1 = new Admin("admin1", "adminPass", true, true, true, true, "admin123");
         Guest admin2 = new Admin("admin1", "adminPass", true, true, true, true, "admin123");

@@ -1,3 +1,7 @@
+package Guest;
+
+import Guest.Guest;
+
 public class User extends Guest {
     private String surname;
     private String position;
@@ -8,7 +12,7 @@ public class User extends Guest {
         this.position = position;
     }
 
-    public String etSurname() {
+    public String getSurname() {
         return surname;
     }
 

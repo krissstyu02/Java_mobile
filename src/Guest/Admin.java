@@ -1,3 +1,5 @@
+package Guest;
+
 public class Admin extends Guest {
     private String additionalPassword;
 
