@@ -5,6 +5,7 @@ import java.util.List;
 
 public class MainGuest {
     public static void main(String[] args) {
+
         Guest admin1 = new Admin("admin1", "adminPass", true, true, true, true, "admin123");
         Guest admin2 = new Admin("admin1", "adminPass", true, true, true, true, "admin123");
         Guest admin3 = new Admin("admin3", "adminPass", true, true, true, true, "admin789");
